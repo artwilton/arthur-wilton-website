@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 
 import HomeScreenMain from './components/home/HomeScreenMain'
 
-import Button from 'react-bootstrap/Button';
-
-import './App.css';
+import './App.scss';
 
 const App = () => (
 

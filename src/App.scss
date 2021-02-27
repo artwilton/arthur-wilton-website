@@ -1,3 +1,6 @@
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+@import "./scss/custom.scss";
+
 /* remove rounding from cards, buttons and inputs */
 .card, .btn, .form-control { border-radius: 0; }
 
@@ -30,7 +33,7 @@
 }
 
 #Section-01 {
-  border: 5px dotted red;
+  // border: 5px dotted red;
   color: white;
   position:relative;
   width:100%;

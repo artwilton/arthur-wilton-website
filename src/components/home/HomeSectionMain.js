@@ -25,7 +25,7 @@ function HomeSectionMain(props) {
           <br />
           <Row className="justify-content-center">
             <Col sm="auto">
-                <Button variant="outline-light" size="lg" block>work</Button>
+                <Button className="btn-primary" variant="outline-light" size="lg" block>work</Button>
             </Col>
             <Col sm="auto">
                 <Button variant="outline-light" size="lg" block>about</Button>
