@@ -5,11 +5,12 @@
 
 // My Customizations
 
-$display1-size: 8.5rem;
-$display1-weight: 400;
-$headings-font-family:  'Lato', sans-serif;
+$display1-size: 8rem;
+$display1-weight: 700;
+$headings-font-family:  europa, Lato, sans-serif;
 $lead-font-size: 3rem;
-$lead-font-weight: 100;
+$lead-font-weight: 300;
+
 
 // custom variable default overrides
 @import "/node_modules/bootstrap/scss/type";
