@@ -1,12 +1,15 @@
 // Required Bootstrap Imports
-@import "/node_modules/bootstrap/scss/functions";
+// @import "/node_modules/bootstrap/scss/functions";
 @import "/node_modules/bootstrap/scss/variables";
-@import "/node_modules/bootstrap/scss/mixins";
+// @import "/node_modules/bootstrap/scss/mixins";
 
 // My Customizations
 
-$theme-colors: (
-  primary: red);
+$display1-size: 8.5rem;
+$display1-weight: 400;
+$headings-font-family:  'Lato', sans-serif;
+$lead-font-size: 3rem;
+$lead-font-weight: 100;
 
 // custom variable default overrides
-@import "/node_modules/bootstrap/scss/bootstrap";
+@import "/node_modules/bootstrap/scss/type";
