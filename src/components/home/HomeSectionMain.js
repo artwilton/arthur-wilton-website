@@ -1,20 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import video from "../../../src/assets/home/home_screen_video_main.mp4";
+import homeScreenVideoMain from "../../../src/assets/home/home_screen_video_main.mp4";
+import homeScreenVideoAbout from "../../../src/assets/home/home_screen_video_about.mp4";
 import preview from "../../../src/assets/home/home_screen_video_main.jpg";
 
+
 function HomeSectionMain(props) {
+  const [backgroundVideo, setBackgroundVideo] = useState(homeScreenVideoMain);
+
+  // const backgroundVideoRef = useRef();
+  // const previousUrl = useRef(url);
+
   return (
     <section id="Section-01">
       <div className="videoOverlay"></div>
 
-      <video id="homeScreenVideo" poster={preview} autoPlay muted loop>
-        <source src={video} type="video/mp4" />
+      <video key={backgroundVideo} id="homeScreenVideo" poster={preview} autoPlay muted loop>
+        <source src={backgroundVideo} type="video/mp4" />
       </video>
 
       <Container fluid className="d-flex flex-column h-100">
@@ -25,20 +32,25 @@ function HomeSectionMain(props) {
           <br />
           <Row className="justify-content-center">
             <Col sm="auto">
-                <Button variant="outline-light" size="lg" block>work</Button>
+              <Button variant="outline-light" size="lg" block>
+                my work
+              </Button>
             </Col>
             <Col sm="auto">
-                <Button variant="outline-light" size="lg" block>about</Button>
+              <Button variant="outline-light" size="lg" block onMouseEnter={() => setBackgroundVideo(homeScreenVideoAbout)}
+                onMouseLeave={() => setBackgroundVideo(homeScreenVideoMain)}>
+                about
+              </Button>
             </Col>
             <Col sm="auto">
-                <Button variant="outline-light" size="lg" block>blog</Button>
+              <Button variant="outline-light" size="lg" block>
+                blog
+              </Button>
             </Col>
           </Row>
         </div>
       </Container>
-      <div class="container">
-  
-</div>
+      <div class="container"></div>
     </section>
   );
 }

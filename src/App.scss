@@ -2,7 +2,7 @@
 @import "./scss/custom.scss";
 
 /* remove rounding from cards, buttons and inputs */
-.card, .btn, .form-control { border-radius: 0; }
+// .card, .btn, .form-control { border-radius: 0; }
 
 /* Home Screen */
 
@@ -42,6 +42,13 @@
   overflow: hidden;
 }
 
-#Section-01, p {
+#Section-01 p {
+  // border: 2px dotted red;
   font-family: gill-sans-nova, Gill Sans,Gill Sans MT,Calibri,sans-serif;
+  padding-bottom: 10%;
+}
+
+#Section-01 .btn {
+  min-width: 200px;
+  padding-bottom: .4rem;
 }

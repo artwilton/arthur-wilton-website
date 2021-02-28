@@ -1,16 +1,25 @@
 // Required Bootstrap Imports
-// @import "/node_modules/bootstrap/scss/functions";
+@import "/node_modules/bootstrap/scss/functions";
 @import "/node_modules/bootstrap/scss/variables";
-// @import "/node_modules/bootstrap/scss/mixins";
+@import "/node_modules/bootstrap/scss/mixins";
 
 // My Customizations
 
-$display1-size: 8rem;
+$display1-size: 8.5rem;
 $display1-weight: 700;
 $headings-font-family:  europa, Lato, sans-serif;
-$lead-font-size: 3rem;
+$lead-font-size: 3.2rem;
 $lead-font-weight: 300;
 
+$btn-font-family: gill-sans-nova, Gill Sans,Gill Sans MT,Calibri,sans-serif;
+$btn-font-size-lg: 2.5rem;
+$btn-border-width: .15rem;
+$btn-font-weight: 400;
+$btn-white-space: nowrap;
+
+$btn-padding-y-lg: 0;
+$btn-border-radius-lg: 0;
 
 // custom variable default overrides
 @import "/node_modules/bootstrap/scss/type";
+@import "/node_modules/bootstrap/scss/buttons";
