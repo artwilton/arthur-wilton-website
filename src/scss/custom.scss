@@ -7,7 +7,7 @@
 
 $display1-size: 8.5rem;
 $display1-weight: 700;
-$headings-font-family:  europa, Lato, sans-serif;
+$headings-font-family:  gill-sans-nova, Gill Sans,Gill Sans MT,Calibri,sans-serif;
 $lead-font-size: 3.2rem;
 $lead-font-weight: 300;
 
@@ -20,6 +20,14 @@ $btn-white-space: nowrap;
 $btn-padding-y-lg: 0;
 $btn-border-radius-lg: 0;
 
+$h1-font-size: 5rem;
+
+$border-width: 2px;
+
+$card-border-radius: 0;
+
 // custom variable default overrides
 @import "/node_modules/bootstrap/scss/type";
 @import "/node_modules/bootstrap/scss/buttons";
+@import "/node_modules/bootstrap/scss/utilities";
+

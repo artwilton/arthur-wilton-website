@@ -32,7 +32,8 @@
   z-index: -2;
 }
 
-#Section-01 {
+// Section 01
+#Section01 {
   // border: 5px dotted red;
   color: white;
   position:relative;
@@ -42,13 +43,44 @@
   overflow: hidden;
 }
 
-#Section-01 p {
+#Section01 h1 {
+  font-family: europa, Lato, sans-serif;
+}
+
+#Section01 p {
   // border: 2px dotted red;
   font-family: gill-sans-nova, Gill Sans,Gill Sans MT,Calibri,sans-serif;
   padding-bottom: 10%;
+  // border: 2px dotted white;
 }
 
-#Section-01 .btn {
+#Section01 .btn {
   min-width: 200px;
   padding-bottom: .4rem;
+}
+
+// Section 02
+#Section02 {
+  color: white;
+  background-color: #161619;
+  min-height:640px;
+
+}
+
+#Section02 h1{
+  // border: 2px dotted white;
+  font-weight: 700;
+  margin-top: 5rem;
+}
+
+#aboutCards {
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+  font-size: 4rem;
+}
+
+#Section03 {
+  color: black;
+  background-color: #DADADA;
+  min-height:640px;
 }

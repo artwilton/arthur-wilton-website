@@ -5,19 +5,16 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import homeScreenVideoMain from "../../../src/assets/home/home_screen_video_main.mp4";
-import homeScreenVideoAbout from "../../../src/assets/home/home_screen_video_about.mp4";
-import preview from "../../../src/assets/home/home_screen_video_main.jpg";
+import homeScreenVideoMain from "../../assets/home/main_section/home_screen_video_main.mp4";
+import homeScreenVideoAbout from "../../assets/home/main_section/home_screen_video_about.mp4";
+import preview from "../../assets/home/main_section/home_screen_video_main.jpg";
 
 
 function HomeSectionMain(props) {
   const [backgroundVideo, setBackgroundVideo] = useState(homeScreenVideoMain);
 
-  // const backgroundVideoRef = useRef();
-  // const previousUrl = useRef(url);
-
   return (
-    <section id="Section-01">
+    <section id="Section01">
       <div className="videoOverlay"></div>
 
       <video key={backgroundVideo} id="homeScreenVideo" poster={preview} autoPlay muted loop>
@@ -50,7 +47,6 @@ function HomeSectionMain(props) {
           </Row>
         </div>
       </Container>
-      <div class="container"></div>
     </section>
   );
 }

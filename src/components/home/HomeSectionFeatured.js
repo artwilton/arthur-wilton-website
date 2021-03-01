@@ -1,5 +1,9 @@
 function HomeSectionFeatured(props) {
-    return (<h1>HomeSectionFeatured</h1>);
+    return (
+        <section id="Section03">
+            <h1>HomeSectionFeatured</h1>
+        </section>
+    );
 }
 
 export default HomeSectionFeatured;
