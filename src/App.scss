@@ -87,7 +87,8 @@
   background-color: #DADADA;
   min-height:640px;
   border-width: 10px;
-
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 #Section03 h2{
@@ -96,10 +97,29 @@
 }
 
 #Section03 .border-bottom{
-  width: 20rem;
-
+  max-width: 22rem;
 }
 
 #Section03 img{
   max-height: 50rem;
+}
+
+#Section03 h3{
+  font-weight: 500;
+  padding-top: 2rem;
+  padding-bottom: .5rem;
+}
+
+#Section03 p{
+  font-size: 2rem;
+  font-weight: 200;
+  padding-bottom: 2rem;
+
+}
+
+#Section03 .btn {
+  width: 18rem;
+  padding-bottom: .5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
