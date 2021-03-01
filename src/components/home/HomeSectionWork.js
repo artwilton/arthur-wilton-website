@@ -14,7 +14,7 @@ function HomeSectionWork(props) {
   return (
     <section id="Section02">
       <Container fluid className="d-flex flex-column h-100">
-        <h1 className="px-4 align-self-center text-center border-bottom border-white">
+        <h1 className="align-self-center text-center border-bottom border-white">
           MY WORK
         </h1>
 

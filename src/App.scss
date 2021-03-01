@@ -64,13 +64,16 @@
   color: white;
   background-color: #161619;
   min-height:640px;
-
 }
 
 #Section02 h1{
   // border: 2px dotted white;
   font-weight: 700;
   margin-top: 5rem;
+  padding-bottom: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+
 }
 
 #aboutCards {
@@ -80,7 +83,23 @@
 }
 
 #Section03 {
-  color: black;
+  color: #161619;
   background-color: #DADADA;
   min-height:640px;
+  border-width: 10px;
+
+}
+
+#Section03 h2{
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+
+#Section03 .border-bottom{
+  width: 20rem;
+
+}
+
+#Section03 img{
+  max-height: 50rem;
 }
