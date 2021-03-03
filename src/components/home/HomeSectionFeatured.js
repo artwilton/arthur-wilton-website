@@ -12,14 +12,14 @@ function HomeSectionFeatured(props) {
         <Row className="justify-content-center align-self-center">
           <Col md="2"></Col>
           <Col md="4" className="my-auto">
-            <h2 className="border-bottom border-white">FEATURED PROJECT:</h2>
+            <h2 className="border-bottom border-white">Featured Project:</h2>
             <h3 className="">
               PIM: The Personal <br /> Inventory Manager
             </h3>
             <p>
               Mobile Application built with a React Native frontend and Ruby on Rails backend.
             </p>
-            <Button variant="outline-dark" size="lg" block>
+            <Button variant="outline-light" size="lg" block>
               project case study
             </Button>
           </Col>

@@ -49,7 +49,7 @@
 
 #Section01 p {
   // border: 2px dotted red;
-  font-family: gill-sans-nova, Gill Sans,Gill Sans MT,Calibri,sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-bottom: 10%;
   // border: 2px dotted white;
 }
@@ -61,30 +61,40 @@
 
 // Section 02
 #Section02 {
-  color: white;
-  background-color: #161619;
-  min-height:640px;
+  // color: white;
+  // background-color: #161619;
+
+  color: #161619;
+  background-color: #f7f7f7;
+
+  // min-height:640px;
+  padding-top: 4rem;
+  padding-bottom: 7rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+
 }
 
 #Section02 h1{
   // border: 2px dotted white;
   font-weight: 700;
-  margin-top: 5rem;
-  padding-bottom: 1rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-
+  padding-bottom: .8rem;
+  padding-left: 3.5rem;
+  padding-right:3.5rem;
+  margin-bottom: 2rem;
 }
 
-#aboutCards {
-  margin-top: 5rem;
-  margin-bottom: 7rem;
-  font-size: 4rem;
+#Section02 p{
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
 }
 
 #Section03 {
-  color: #161619;
-  background-color: #DADADA;
+  color: white;
+  background-color: #161619;
+
+  // color: #161619;
+  // background-color: #DADADA;
   min-height:640px;
   border-width: 10px;
   padding-top: 1rem;
