@@ -1,14 +1,24 @@
 import React, { useState } from 'react';
 
-import HomeScreenMain from './components/home/HomeScreenMain'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+import { HomeScreenMain, AboutScreenMain} from './components/mainComponentsIndex'
 
 import './App.scss';
 
 const App = () => (
 
-  <>
-    <HomeScreenMain/>
-  </>
+  <Router>
+    <Switch>
+      <HomeScreenMain/>
+      <AboutScreenMain/>
+    </Switch>
+  </Router>
 
 
   // <section className="Section-01">
