@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
+
+import { useHistory } from "react-router-dom";
 
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
@@ -9,15 +11,26 @@ import homeScreenVideoMain from "../../assets/home/main_section/home_screen_vide
 import homeScreenVideoAbout from "../../assets/home/main_section/home_screen_video_about.mp4";
 import preview from "../../assets/home/main_section/home_screen_video_main.jpg";
 
-
 function HomeSectionMain(props) {
   const [backgroundVideo, setBackgroundVideo] = useState(homeScreenVideoMain);
+  const history = useHistory();
+
+  function handleClick(path) {
+    history.push(path);
+  }
 
   return (
     <section id="Section01">
       <div className="videoOverlay"></div>
 
-      <video key={backgroundVideo} id="homeScreenVideo" poster={preview} autoPlay muted loop>
+      <video
+        key={backgroundVideo}
+        id="homeScreenVideo"
+        poster={preview}
+        autoPlay
+        muted
+        loop
+      >
         <source src={backgroundVideo} type="video/mp4" />
       </video>
 
@@ -29,18 +42,34 @@ function HomeSectionMain(props) {
           <br />
           <Row className="justify-content-center">
             <Col sm="auto">
-              <Button variant="outline-light" size="lg" block>
+              <Button
+                variant="outline-light"
+                size="lg"
+                block
+                onClick={() => handleClick("work")}
+              >
                 my work
               </Button>
             </Col>
             <Col sm="auto">
-              <Button variant="outline-light" size="lg" block onMouseEnter={() => setBackgroundVideo(homeScreenVideoAbout)}
-                onMouseLeave={() => setBackgroundVideo(homeScreenVideoMain)}>
+              <Button
+                variant="outline-light"
+                size="lg"
+                block
+                onMouseEnter={() => setBackgroundVideo(homeScreenVideoAbout)}
+                onMouseLeave={() => setBackgroundVideo(homeScreenVideoMain)}
+                onClick={() => handleClick("about")}
+              >
                 about
               </Button>
             </Col>
             <Col sm="auto">
-              <Button variant="outline-light" size="lg" block>
+              <Button
+                variant="outline-light"
+                size="lg"
+                block
+                onClick={() => handleClick("blog")}
+              >
                 blog
               </Button>
             </Col>

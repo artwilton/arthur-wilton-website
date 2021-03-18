@@ -15,8 +15,12 @@ const App = () => (
 
   <Router>
     <Switch>
-      <HomeScreenMain/>
-      <AboutScreenMain/>
+      <Route exact path="/">
+        <HomeScreenMain/>
+      </Route>
+      <Route exact path="/about">
+        <AboutScreenMain/>
+      </Route>
     </Switch>
   </Router>
 
