@@ -7,7 +7,7 @@ import {
   Link
 } from "react-router-dom";
 
-import { HomeScreenMain, AboutScreenMain} from './components/mainComponentsIndex'
+import { HomeScreenMain, AboutScreenMain } from './components/mainComponentsIndex'
 
 import './App.scss';
 
@@ -21,6 +21,7 @@ const App = () => (
       <Route exact path="/about">
         <AboutScreenMain/>
       </Route>
+      <Route exact path="/blog" render={() => (window.location = 'https://artwilton.medium.com/')} />
     </Switch>
   </Router>
 

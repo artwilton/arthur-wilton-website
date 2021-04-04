@@ -15,6 +15,8 @@ function HomeSectionMain(props) {
   const [backgroundVideo, setBackgroundVideo] = useState(homeScreenVideoMain);
   const history = useHistory();
 
+  const blogUrl = 'https://artwilton.medium.com/'
+
   function handleClick(path) {
     history.push(path);
   }
@@ -68,7 +70,7 @@ function HomeSectionMain(props) {
                 variant="outline-light"
                 size="lg"
                 block
-                onClick={() => handleClick("blog")}
+                onClick={() => window.open(blogUrl)}
               >
                 blog
               </Button>
