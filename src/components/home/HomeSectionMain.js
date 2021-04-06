@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import { useHistory } from "react-router-dom";
 
+import { Link } from "react-router-dom";
+
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -15,7 +17,7 @@ function HomeSectionMain(props) {
   const [backgroundVideo, setBackgroundVideo] = useState(homeScreenVideoMain);
   const history = useHistory();
 
-  const blogUrl = 'https://artwilton.medium.com/'
+  const blogUrl = "https://artwilton.medium.com/";
 
   function handleClick(path) {
     history.push(path);
@@ -44,36 +46,37 @@ function HomeSectionMain(props) {
           <br />
           <Row className="justify-content-center">
             <Col sm="auto">
-              <Button
-                variant="outline-light"
-                size="lg"
+              <Link
+                className="btn btn-outline-light btn-lg"
+                role="button"
                 block
-                onClick={() => handleClick("work")}
+                to="/work"
               >
-                my work
-              </Button>
+                work
+              </Link>
             </Col>
             <Col sm="auto">
-              <Button
-                variant="outline-light"
-                size="lg"
+              <Link
+                className="btn btn-outline-light btn-lg"
+                role="button"
                 block
+                to="/about"
                 onMouseEnter={() => setBackgroundVideo(homeScreenVideoAbout)}
                 onMouseLeave={() => setBackgroundVideo(homeScreenVideoMain)}
-                onClick={() => handleClick("about")}
               >
                 about
-              </Button>
+              </Link>
             </Col>
             <Col sm="auto">
-              <Button
-                variant="outline-light"
-                size="lg"
-                block
-                onClick={() => window.open(blogUrl)}
+              <a
+                class="btn btn-outline-light btn-lg"
+                role="button"
+                href={blogUrl}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 blog
-              </Button>
+              </a>
             </Col>
           </Row>
         </div>
